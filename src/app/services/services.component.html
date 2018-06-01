@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap justify-content-center">
+    <div *ngFor="let service of services"  class="card mr-2">
+      <!--Card content-->
+      <div class="card-body">
+          <!--Title-->
+          <h4 class="card-title">{{service.name}}</h4>
+          <!--Text-->
+          <a routerLink="/services/{{service._id}}" class="btn btn-primary waves-light" mdbWavesEffect>Подробнее</a>
+          <a (click)="selectService(service._id)" class="btn btn-primary waves-light" mdbWavesEffect>Выбрать</a>
+      </div>
+  
+  </div>
+  </div> 
